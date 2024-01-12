@@ -1,0 +1,51 @@
+import React from 'react'
+import Link from "next/link"
+import { swrTest } from '../hooks/swrTest'
+
+
+export default function () {
+  // useSWR(fetch)が必要
+  return (
+    <div className='ml-24'>
+      <p className='flex'>混雑状況</p>
+      {/* 一段目 */}
+      <div>
+        <div>
+          <p>エレベーター内</p>
+          <p>5人</p>
+        </div>
+        <div>
+          <p>6F</p>
+          <p>5人</p>
+        </div>
+      </div>
+      {/* 二段目 */}
+      <div>
+        <div>
+          <p>5F</p>
+          <p>5人</p>
+        </div>
+        <div>
+          <p>4F</p>
+          <p>5人</p>
+        </div>
+      </div>
+      {/* 三段目 */}
+      <div>
+        <div>
+          <p>3F</p>
+          <p>5人</p>
+        </div>
+        <div>
+          <p>2F</p>
+          <p>5人</p>
+        </div>
+      </div>
+      <Link href={"/login"} legacyBehavior>
+        <a>戻る</a>
+      </Link>
+    </div>
+  )
+}
+
+

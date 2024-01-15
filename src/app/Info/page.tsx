@@ -2,7 +2,7 @@
 
 import React from 'react'
 import Link from "next/link"
-import { SwrTest } from '../hooks/SwrTest'
+import { useTest } from '../hooks/useTest'
 
 export default function() {
 
@@ -18,7 +18,7 @@ export default function() {
   console.log(flore)
 
   // useSWR(fetch)が必要
-  const { data, isError, isLoading } = SwrTest();
+  const { data, isError, isLoading } = useTest();
   if (isError) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 

@@ -2,7 +2,7 @@
 import React from 'react'
 import Image from "next/image"
 import { useState } from 'react'
-import { SwrTest } from '../hooks/SwrTest'
+import { useTest } from '../hooks/useTest'
 
 export const Sidenav = () => {
 
@@ -19,7 +19,7 @@ export const Sidenav = () => {
   let lower = 0
 
   // ポーリング(定期的にfetchする)が必要  実装済み
-  const { data, isError, isLoading } = SwrTest();
+  const { data, isError, isLoading } = useTest();
   if (isError) return <div>failed to load</div>;
   if (isLoading) return<div>now loading</div>;
 

@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
 import Image from "next/image"
-import { swrTest } from '../hooks/swrTest'
 import { useState } from 'react'
+import { swrTest } from '../hooks/SwrTest'
 
 export const Sidenav = () => {
 

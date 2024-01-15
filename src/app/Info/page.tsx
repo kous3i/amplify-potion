@@ -2,9 +2,9 @@
 
 import React from 'react'
 import Link from "next/link"
-import { swrTest } from '../hooks/swrTest'
+import { swrTest } from '../hooks/SwrTest'
 
-export default function () {
+export default function Info() {
 
   const location = 2
   let flore:number[] = [] 

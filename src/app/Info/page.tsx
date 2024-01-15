@@ -4,7 +4,7 @@ import React from 'react'
 import Link from "next/link"
 import { useTest } from '../hooks/useTest'
 
-export default function() {
+export default function Info() {
 
   const location = 2
   let flore:number[] = [] 

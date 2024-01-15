@@ -2,9 +2,9 @@
 
 import React from 'react'
 import Link from "next/link"
-import { swrTest } from '../hooks/SwrTest'
+import { SwrTest } from '../hooks/SwrTest'
 
-export default function Info() {
+export default function() {
 
   const location = 2
   let flore:number[] = [] 
@@ -18,7 +18,7 @@ export default function Info() {
   console.log(flore)
 
   // useSWR(fetch)が必要
-  const { data, isError, isLoading } = swrTest();
+  const { data, isError, isLoading } = SwrTest();
   if (isError) return <div>failed to load</div>;
   if (isLoading) return <div>loading...</div>;
 

@@ -25,7 +25,7 @@ async function fetcher(key: string) {
 }
 
 
-export const swrTest = () => {
+export const SwrTest = () => {
     // useSWRの引数 useSWR(key, fetcher, options)
     // key: リクエストのURL　fetcher: データを返す非同期関数　options: オプション
     // refreshInterval: データを再取得する間隔(ミリ秒)

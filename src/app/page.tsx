@@ -1,6 +1,3 @@
-import fetch from "node-fetch"
-const nodeFetch: any = fetch;
-global.Headers = nodeFetch.Headers;
 export default function Home() {
   return (
     <div>
